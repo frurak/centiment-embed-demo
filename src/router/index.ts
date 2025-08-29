@@ -1,7 +1,7 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory('/centiment-embed-demo/'),
   routes: [
     { path: '/martina', name: 'martina', component: () => import('../views/Martina.vue') },
     { path: '/helena', name: 'helena', component: () => import('../views/Helena.vue') },
