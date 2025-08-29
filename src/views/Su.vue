@@ -1,6 +1,6 @@
 <template>
     <Base>
-        <div data-centiment-embed="ce_QyRXg6Qt"></div>
+        <div data-embed-element="ce_QyRXg6Qt"></div>
     </Base>
 </template>
 
