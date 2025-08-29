@@ -1,9 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Martina from "../views/Martina.vue";
-import Helena from "../views/Martina.vue";
-import Su from "../views/Martina.vue";
-import Kurt from "../views/Martina.vue";
+import Helena from "../views/Helena.vue";
+import Su from "../views/Su.vue";
+import Kurt from "../views/Kurt.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),

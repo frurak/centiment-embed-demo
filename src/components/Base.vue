@@ -30,7 +30,9 @@
             ipsum, at volutpat sem convallis nec.
         </p>
 
-        <slot />
+        <div class="base__embed">
+            <slot />
+        </div>
 
         <p>
             Phasellus tempus dolor risus, id aliquam dolor auctor a. Proin scelerisque convallis risus a
@@ -100,6 +102,14 @@
 
     max-width: 800px;
     margin: 0 auto;
+}
+
+.base__embed {
+    width: 100%;
+
+    > div {
+        width: 100%;
+    }
 }
 </style>
 <script setup lang="ts">
