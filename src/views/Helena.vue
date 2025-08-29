@@ -1,6 +1,6 @@
 <template>
     <Base>
-        <div data-centiment-embed="ce_QyRXg6Qt"></div>
+        <div data-centiment-embed="ce_UD1ZP4sM"></div>
     </Base>
 </template>
 
