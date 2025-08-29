@@ -9,7 +9,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/martina', name: 'martina', component: Martina },
-    { path: '/helena', name: 'helena', Helena },
+    { path: '/helena', name: 'helena', component: Helena },
     { path: '/su', name: 'su', component: Su },
     { path: '/kurt', name: 'kurt', component: Kurt },
   ],
