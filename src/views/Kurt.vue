@@ -1,6 +1,6 @@
 <template>
     <Base>
-        <div data-embed-element="Q6RYjTGVKj5Y"></div>
+        <div data-embed-element="xuO1wUyrRaX4"></div>
     </Base>
 </template>
 
@@ -11,7 +11,7 @@ import Base from '@/components/Base.vue';
 onBeforeMount(() => {
     const script = document.createElement("script");
     script.src = "https://embed.centiment.co/index.js";
-    script.setAttribute("data-embed", "Q6RYjTGVKj5Y");
+    script.setAttribute("data-embed", "xuO1wUyrRaX4");
     document.body.append(script);
 });
 </script>
