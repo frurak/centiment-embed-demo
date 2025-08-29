@@ -1,12 +1,17 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
+
+import Martina from "../views/Martina.vue";
+import Helena from "../views/Martina.vue";
+import Su from "../views/Martina.vue";
+import Kurt from "../views/Martina.vue";
 
 const router = createRouter({
-  history: createWebHistory('/centiment-embed-demo/'),
+  history: createWebHashHistory(),
   routes: [
-    { path: '/martina', name: 'martina', component: () => import('../views/Martina.vue') },
-    { path: '/helena', name: 'helena', component: () => import('../views/Helena.vue') },
-    { path: '/su', name: 'su', component: () => import('../views/Su.vue') },
-    { path: '/kurt', name: 'kurt', component: () => import('../views/Kurt.vue') },
+    { path: '/martina', name: 'martina', component: Martina },
+    { path: '/helena', name: 'helena', Helena },
+    { path: '/su', name: 'su', component: Su },
+    { path: '/kurt', name: 'kurt', component: Kurt },
   ],
 })
 
