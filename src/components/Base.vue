@@ -30,9 +30,7 @@
             ipsum, at volutpat sem convallis nec.
         </p>
 
-        <div class="base__embed">
-            <slot />
-        </div>
+        <slot />
 
         <p>
             Phasellus tempus dolor risus, id aliquam dolor auctor a. Proin scelerisque convallis risus a
