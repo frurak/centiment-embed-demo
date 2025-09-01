@@ -9,9 +9,11 @@ import { onMounted } from 'vue';
 import Base from '@/components/Base.vue';
 
 onMounted(() => {
-    const script = document.createElement("script");
-    script.src = "https://embed.centiment.co/index.js";
-    script.setAttribute("data-embed", "xuO1wUyrRaX4");
-    document.body.append(script);
+    setTimeout(() => {
+        const script = document.createElement("script");
+        script.src = "https://embed.centiment.co/index.js";
+        script.setAttribute("data-embed", "xuO1wUyrRaX4");
+        document.body.append(script);
+    }, 2000);
 });
 </script>
