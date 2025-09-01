@@ -1,6 +1,6 @@
 <template>
     <Base>
-        <div :data-embed-element="_id"></div>
+        <div :data-embed-element="_id">...</div>
     </Base>
 </template>
 
