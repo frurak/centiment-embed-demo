@@ -171,7 +171,7 @@
 }
 
 .base__content {
-    margin-top: 80px;
+    padding: 80px 16px;
 }
 
 .base__content h1 {
@@ -210,6 +210,13 @@
     font-weight: 600;
     color: #3446a8;
     margin-bottom: 48px;
+}
+
+@media (max-width: 900px) {
+    .base__nav {
+        width: calc(100% - 32px);
+        padding: 0 16px;
+    }
 }
 </style>
 <script setup lang="ts">
