@@ -13,11 +13,13 @@ const _id = "xuO1wUyrRaX4";
 onMounted(() => {
     const existing = document.querySelector(`script[src="https://embed.centiment.co/index.js"][data-embed="${_id}"]`);
     if (!existing) {
-        const script = document.createElement("script");
-        script.src = "https://embed.centiment.co/index.js";
-        script.async = true;
-        script.dataset.embed = _id;
-        document.body.appendChild(script);
+        requestAnimationFrame(() => {
+            const script = document.createElement("script");
+            script.src = "https://embed.centiment.co/index.js";
+            script.async = true;
+            script.dataset.embed = _id;
+            document.body.appendChild(script);
+        });
     }
 });
 </script>
