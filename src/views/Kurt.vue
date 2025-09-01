@@ -1,6 +1,6 @@
 <template>
     <Base>
-        <div data-embed-element="xuO1wUyrRaX4"></div>
+        <div :data-embed-element="_id"></div>
     </Base>
 </template>
 
@@ -8,11 +8,16 @@
 import { onMounted } from 'vue';
 import Base from '@/components/Base.vue';
 
+const _id = "xuO1wUyrRaX4";
+
 onMounted(() => {
-    const script = document.createElement("script");
-    script.src = "https://embed.centiment.co/index.js";
-    script.async = true;
-    script.dataset.embed = "xuO1wUyrRaX4";
-    document.body.append(script);
+    const existing = document.querySelector(`script[src="https://embed.centiment.co/index.js"][data-embed="${_id}"]`);
+    if (!existing) {
+        const script = document.createElement("script");
+        script.src = "https://embed.centiment.co/index.js";
+        script.async = true;
+        script.dataset.embed = _id;
+        document.body.appendChild(script);
+    }
 });
 </script>
