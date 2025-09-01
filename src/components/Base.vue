@@ -209,7 +209,7 @@
     line-height: 1.5;
     font-weight: 600;
     color: #3446a8;
-    margin-bottom: 48px;
+    margin-bottom: 12px;
 }
 
 @media (max-width: 900px) {
