@@ -11,7 +11,8 @@ import Base from '@/components/Base.vue';
 onMounted(() => {
     const script = document.createElement("script");
     script.src = "https://embed.centiment.co/index.js";
-    script.setAttribute("data-embed", "xuO1wUyrRaX4");
+    script.async = true;
+    script.dataset.embed = "xuO1wUyrRaX4";
     document.body.append(script);
 });
 </script>
