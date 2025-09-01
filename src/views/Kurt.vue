@@ -13,5 +13,9 @@ onMounted(() => {
     script.src = "https://embed.centiment.co/index.js";
     script.setAttribute("data-embed", "xuO1wUyrRaX4");
     document.body.append(script);
+
+    script.onload = () => {
+        console.log("script loaded");
+    };
 });
 </script>
