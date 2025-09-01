@@ -5,14 +5,13 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import Base from '@/components/Base.vue';
 
-const createScript = () => {
+onMounted(() => {
     const script = document.createElement("script");
     script.src = "https://embed.centiment.co/index.js";
     script.setAttribute("data-embed", "xuO1wUyrRaX4");
     document.body.append(script);
-};
-
-createScript();
+});
 </script>
