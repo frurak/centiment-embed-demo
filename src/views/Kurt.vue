@@ -8,7 +8,7 @@
 import { onMounted } from 'vue';
 import Base from '@/components/Base.vue';
 
-const _id = "xuO1wUyrRaX4";
+const _id = "WZuC3r6TIXJ4";
 
 onMounted(() => {
     const existing = document.querySelector(`script[src="https://embed.centiment.co/index.js"][data-embed="${_id}"]`);
